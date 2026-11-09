@@ -12,3 +12,14 @@ jobs:
     steps:
       - name: Afficher un message
         run: echo "Hello from GitHub Actions"
+
+      - name: Informations sur le runner
+        run: |
+          echo "Version de Python :"
+          python --version
+
+          echo "Répertoire courant :"
+          pwd
+
+          echo "Liste des fichiers :"
+          ls -la
